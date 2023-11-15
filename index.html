@@ -11,54 +11,60 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <style>
-        /* TODO 3: Add CSS media queries for smaller screens */
-@media only screen and (max-width: 768px) {
+    /* TODO 3: Add CSS media queries for smaller screens */
+    @media only screen and (max-width: 768px) {
 
-/* TODO 4: Center logo */
-.logo {
-    top: 0;
-    left: 100;
-}
+        /* TODO 4: Center logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            z-index: 1;
+        }
 
-/* TODO 5: Shift navigation below logo, add a black background and center all nav items */
-nav {
-    float: none;
-    text-align: center;
-    margin-top: 10px;
-    background-color: black; /* Add a black background to the navigation */
-}
+        /* TODO 5: Shift navigation below logo, add a black background and center all nav items */
+        nav {
+            background-color: rgba(134, 134, 134, 0.496);
+            text-align: center;
+        }
 
-nav a {
-    display: block;
-    padding: 10px;
-    color: white;
-}
+        nav a {
+            display: block;
+            font-size: 10px;
+            padding: 0 5px;
+            color: white;
+        }
 
-/* TODO 6: Stack the 3 images in 1 column */
-.card {
-    width: 100%; /* Make cards take full width on smaller screens */
-    margin-bottom: 20px;
-}
+        /* TODO 6: Stack the 3 images in 1 column */
+        .card {
+            width: 100%;
+            /* Make cards take full width on smaller screens */
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
 
-/* TODO 7: Hide the video */
-.vid {
-    display: none;
-}
-}
+        /* TODO 7: Hide the video */
+        .vid {
+            display: none;
+        }
 
+        body {
+            background-image: url('images/reynier-carl-IzXTR79nph0-unsplash.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: max-content;
+            overflow: auto;
+        }
 
-body {
-overflow-x: hidden; 
-}
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
 
-.container {
-padding-left: 15px;
-padding-right: 15px;
-}
-
-.card-img-top {
-width: 100%; 
-}
+        .card-img-top {
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -147,7 +153,7 @@ width: 100%;
                 <a href="#">Friend's Adventure!</a>
             </div>
         </div>
-        
+
         <a href="#">Rediscover Singapore</a>
         <a href="cruises.html">Cruises</a>
         <a href="contact.html">Contact Us</a>
